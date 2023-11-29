@@ -1,23 +1,29 @@
-     * {
-         margin: 0;
-         padding: 0;
-     }
-     
-     $ColorSelectSite :#F16D7F;
-     $BackColor:#F8F3F4;
-     $WidthSite: 1140px;
-     a {
-         text-decoration: none;
-     }
-     
-     body {
-         font-family: 'Lato', sans-serif;
-     }
-     
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ summary {
+     display: block;
+ }
+ 
+ summary::-webkit-details-marker {
+     display: none;
+ }
+ 
+ $ColorSelectSite :#F16D7F;
+ $ColorText: black;
+ $BackColor:#F8F3F4;
+ $WidthSite: 1140px;
+ a {
+     text-decoration: none;
+ }
+ 
+ body {
+     font-family: 'Lato', sans-serif;
      img {
          max-width: 100vw;
      }
-     
      .body {
          display: flex;
          flex-direction: column;
@@ -26,84 +32,85 @@
          justify-content: center;
          align-items: stretch;
      }
-     
-     .center {
-         padding-left: calc(50% - $WidthSite / 2);
-         padding-right: calc(50% - $WidthSite / 2);
-     }
-     
-     .header {
-         display: flex;
-         background-color: black;
-         flex-wrap: wrap;
-         align-content: center;
-         justify-content: space-around;
-         align-items: center;
-     }
-     /* Кнопка выпадающего списка */
-     
-     .dropbtn {
-         background-color: #000000;
-         color: rgb(255, 255, 255);
-         padding: 16px;
-         font-size: 16px;
-         border: none;
-     }
-     /* Контейнер <div> - необходим для размещения выпадающего содержимого */
-     
-     .dropdown {
-         position: relative;
-         display: inline-block;
-     }
-     /* Выпадающее содержимое (скрыто по умолчанию) */
-     
-     .dropdown-content {
-         display: none;
-         position: absolute;
-         background-color: #f1f1f1;
-         min-width: 160px;
-         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-         z-index: 1;
-     }
-     /* Ссылки внутри выпадающего списка */
-     
-     .dropdown-content a {
-         color: black;
-         padding: 12px 16px;
-         text-decoration: none;
-         display: block;
-     }
-     /* Изменение цвета выпадающих ссылок при наведении курсора */
-     
-     .dropdown-content a:hover {
-         background-color: #ddd;
-     }
-     /* Показать выпадающее меню при наведении курсора */
-     
-     .dropdown:hover .dropdown-content {
-         display: block;
-     }
-     /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-     
-     .dropdown:hover .dropbtn {
-         background-color: #9e9c9c;
-     }
-     
-     img {
-         margin-left: 40px;
-     }
-     
-     .top_head {
-         height: 148px;
-         background-color: $BackColor;
-         padding-top: 60px;
-         padding-bottom: 60px;
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-         align-items: center;
-     }
-     
+ }
+ 
+ .center {
+     padding-left: calc(50% - $WidthSite / 2);
+     padding-right: calc(50% - $WidthSite / 2);
+ }
+ 
+ .header {
+     display: flex;
+     background-color: black;
+     padding-left: 150px;
+     padding-right: 200px;
+     align-items: center;
+     justify-content: space-between
+ }
+ /* Кнопка выпадающего списка */
+ 
+ .dropbtn {
+     background-color: #000000;
+     color: rgb(255, 255, 255);
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+ }
+ 
+ .dropdown {
+     position: relative;
+     display: inline-block;
+ }
+ /* Выпадающее содержимое (скрыто по умолчанию) */
+ /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+ 
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f1f1f1;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+ }
+ /* Ссылки внутри выпадающего списка */
+ 
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+ }
+ /* Изменение цвета выпадающих ссылок при наведении курсора */
+ 
+ .dropdown-content a:hover {
+     background-color: #ddd;
+ }
+ /* Показать выпадающее меню при наведении курсора */
+ 
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+ /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+ 
+ .dropdown:hover .dropbtn {
+     background-color: #9e9c9c;
+ }
+ 
+ img {
+     margin-left: 40px;
+ }
+ 
+ .top_head {
+     height: 148px;
+     background-color: $BackColor;
+     padding-top: 60px;
+     padding-bottom: 60px;
+     padding-left: 200px;
+     padding-right: 200px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
      .top_headtitle {
          color: $ColorSelectSite;
          font-size: 24px;
@@ -111,14 +118,12 @@
          font-weight: 400;
          line-height: normal;
      }
-     
      .breadcrumbs {
          font-size: 14px;
          font-style: normal;
          font-weight: 300;
          line-height: normal;
      }
-     
      .top_newhead {
          color: $ColorSelectSite;
          font-size: 14px;
@@ -126,31 +131,133 @@
          font-weight: 700;
          line-height: normal;
      }
-     
-     .content {
-         background-color: #F1E4E6;
-         display: flex;
-         flex-wrap: wrap;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center
+ }
+ 
+ .filter-sort {
+     height: 132px;
+     position: relative;
+     width: $WidthSite;
+     padding-left: 200px;
+     padding-right: 200px;
+     display: flex;
+     gap: 30px;
+ }
+ 
+ .filter {
+     padding: 13px 16px 16px;
+     width: 360px;
+     position: absolute;
+     top: 39px;
+     box-sizing: border-box;
+     /*open - открытие меню, изменение чего либо, например цвета*/
+     &[open] {
+         /*рамка*/
+         background-color: #FFF;
+         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
      }
-     
+     &[open] .filter__heading {
+         color: $ColorSelectSite;
+     }
+     &[open] path/* - то что находится внутри SVG*/
+     {
+         fill: $ColorSelectSite;
+     }
+     .filter__summary {
+         display: flex;
+         align-items: center;
+         gap: 11px;
+     }
+     .filter__heading {
+         font-family: Lato;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+         color: $ColorText;
+     }
+     &__item {
+         margin-top: 16px;
+         font-family: Lato;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         color: $ColorText;
+     }
+     &__link-box {
+         display: flex;
+         flex-direction: column;
+         gap: 11px;
+         padding-top: 24px;
+         padding-bottom: 24px;
+         padding-left: 16px;
+         padding-right: 16px;
+     }
+     &__link {
+         color: #6F6E6E;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         &:hover {
+             /*эффект наведения*/
+             color: $ColorSelectSite;
+         }
+     }
+     &__head {
+         color: #6F6E6E;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         border-bottom: 1px solid #EBEBEB;
+         ;
+         border-left: 5px solid $ColorSelectSite;
+     }
+     .filter__item[open] .filter__head {
+         color: $ColorSelectSite;
+     }
+ }
+ 
+ .sort {
+     padding-top: 12px;
+     padding-left: 480px;
+     display: flex;
+     align-items: center;
+     gap: 30px;
+     .sort__details {
+         position: relative;
+         /*шаг 1*/
+     }
+     .sort__head {
+         color: #6F6E6E;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+     }
+     .sort__box {
+         position: absolute;
+         /*шаг2 делает всплывающее окно стаильным*/
+         padding: 7px 30px 11px 9px;
+         background: #FFF;
+         height: 80px;
+         width: 50px;
+         box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.21);
+     }
+ }
+ 
+ .content {
+     background-color: #F1E4E6;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
      .content__img {
          width: 800aw;
          height: 764ah;
      }
-     
-     .content__foto {
-         background-color: #F7F7F7;
-         height: 777px;
-         width: 100%;
-         display: block;
-         /*выравнивание картинки по центру*/
-         margin-left: auto;
-         margin-right: auto
-     }
-     
      .brand {
          color: #222;
          font-family: Lato;
@@ -159,7 +266,6 @@
          font-weight: 900;
          line-height: normal;
      }
-     
      .lux {
          color: #222;
          font-family: Lato;
@@ -168,38 +274,44 @@
          font-weight: 700;
          line-height: normal;
      }
-     
-     .section {
-         margin-top: 4.06rem;
-         margin-bottom: 100px;
-         padding-left: 230px;
-         padding-right: 230px;
-         display: grid;
-         grid-template-columns: 33% 33% 33%;
-         gap: 30px;
-         align-items: center;
-         justify-items: center;
-         text-align: center;
-     }
-     
+ }
+ 
+ .content__foto {
+     background-color: #F7F7F7;
+     height: 777px;
+     width: 100%;
+     display: block;
+     /*выравнивание картинки по центру*/
+     margin-left: auto;
+     margin-right: auto
+ }
+ 
+ .section {
+     margin-top: 4.06rem;
+     margin-bottom: 100px;
+     padding-left: 230px;
+     padding-right: 230px;
+     display: grid;
+     grid-template-columns: 33% 33% 33%;
+     gap: 30px;
+     align-items: center;
+     justify-items: center;
+     text-align: center;
      .section1 {
          width: 360px;
          height: 260px;
          background-image: url(img/5.svg);
      }
-     
      .section2 {
          width: 360px;
          height: 260px;
          background-image: url(img/6.svg);
      }
-     
      .section3 {
          width: 360px;
          height: 260px;
          background-image: url(img/7.svg);
      }
-     
      .section4 {
          width: 100%;
          height: 180px;
@@ -207,55 +319,44 @@
          grid-row: 3/4;
          background-image: url(img/8.svg);
      }
-     
-     .womencollection {
-         text-align: center;
-         margin-bottom: 100px;
-         margin-top: -4.06rem;
-         padding-left: calc(50% - 370px);
-         padding-right: calc(50% - 370px);
-         height: 600px;
-         border: rgb(211, 207, 207) solid 2px;
-     }
-     
-     .basket {
-         margin-top: 65px;
-         margin-bottom: 65px;
-         height: 50px;
-         width: 230px;
-         border: $ColorSelectSite solid 2px;
-     }
-     
-     .Fetured__Items {
-         text-align: center;
-         margin-bottom: 100px;
-         margin-top: 4.06rem;
-         padding-left: 230px;
-         padding-right: 230px;
-     }
-     
+ }
+ 
+ .womencollection {
+     text-align: center;
+     margin-bottom: 100px;
+     margin-top: -4.06rem;
+     padding-left: calc(50% - 370px);
+     padding-right: calc(50% - 370px);
+     height: 600px;
+     border: rgb(211, 207, 207) solid 2px;
+ }
+ 
+ .basket {
+     margin-top: 65px;
+     margin-bottom: 65px;
+     height: 50px;
+     width: 230px;
+     border: $ColorSelectSite solid 2px;
+ }
+ 
+ .Fetured__Items {
+     text-align: center;
+     margin-bottom: 100px;
+     margin-top: 4.06rem;
+     padding-left: 200px;
+     padding-right: 200px;
      .items {
          display: grid;
          grid-template-columns: 33% 33% 33%;
          gap: 30px;
          align-items: center;
-         justify-items: center;
          text-align: center;
          background-color: #F8F8F8;
          padding-top: 10px;
          padding-bottom: 20px;
+         justify-content: end;
+         justify-items: center;
      }
-     
-     .price {
-         color: $ColorSelectSite;
-         font-family: Lato;
-         font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-         padding: 30px;
-     }
-     
      .button__items {
          text-decoration: none;
          width: 212px;
@@ -272,72 +373,77 @@
          background: var(--3-a-68-b-8, #ffffff);
          padding: 1rem 2rem;
      }
-     
      .button__items:hover {
          color: #ffffff;
          background-color: #F16D7F;
      }
-     
-     .icons {
-         height: 340px;
-         display: flex;
-         gap: 30px;
-         flex-wrap: nowrap;
-         flex-direction: row;
-         justify-content: space-around;
-         align-items: center;
-         background-color: #222;
-     }
+ }
+ 
+ .price {
+     color: $ColorSelectSite;
+     font-family: Lato;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     padding: 30px;
+ }
+ 
+ .icons {
+     height: 340px;
+     display: flex;
+     gap: 30px;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     background-color: #222;
      /*картинка по центру*/
-     
      .img__icons {
          display: block;
          margin-left: auto;
          margin-right: auto;
      }
-     
      h3.text {
          padding-top: 20px;
          padding-left: 20px;
          color: white;
          text-align: center;
      }
-     
      .text1 {
          color: white;
          text-align: center;
      }
-     
-     .connection {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         justify-content: space-evenly;
-         align-items: center;
-         align-content: stretch;
-         text-align: center;
-         height: 448px;
-         background-color: #e4dedf;
-     }
-     
-     input[type="submit"]:focus {
-         background-color: #F26376;
-     }
-     
-     .footer {
-         background-color: #222;
-         height: 80px;
-         display: flex;
-         padding: 40px 40px;
-         flex-direction: row;
-         justify-content: space-between;
-         align-items: center;
-     }
-     
-     .button {
-         display: flex;
-     }
-     
+ }
+ 
+ .connection {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+     align-content: stretch;
+     text-align: center;
+     height: 448px;
+     background-color: #e4dedf;
+ }
+ 
+ input[type="submit"]:focus {
+     background-color: #F26376;
+ }
+ 
+ .footer {
+     background-color: #222;
+     height: 80px;
+     display: flex;
+     padding: 40px 40px;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .button {
+     display: flex;
      .button1,
      .button2,
      .button3,
@@ -358,42 +464,43 @@
          background: var(--3-a-68-b-8, #ffffff);
          padding: 1rem 2rem;
      }
-     
-     @media (max-width: 1024px) {
-         .body {
-             padding-left: calc(50% - 376px);
-             padding-right: calc(50% - 376px);
-         }
-         .section,
-         .items {
-             display: flex;
-             flex-direction: column;
-         }
+ }
+ 
+ @media (max-width: 1024px) {
+     .body {
+         padding-left: calc(50% - 376px);
+         padding-right: calc(50% - 376px);
      }
-     
-     @media (max-width: 767px) {
-         img {
-             max-width: 500px;
-         }
-         .content {
-             max-height: 300px;
-             display: flex;
-             align-content: flex-end;
-         }
-         .content__img {
-             visibility: hidden;
-         }
-         .section,
-         .items {
-             display: flex;
-             flex-direction: column;
-         }
-         .icons {
-             min-height: 450px;
-             padding-left: calc(50% - 150px);
-             padding-right: calc(50% - 150px);
-             display: flex;
-             flex-direction: column;
-             flex-wrap: nowrap;
-         }
+     .section,
+     .items {
+         display: flex;
+         flex-direction: column;
      }
+ }
+ 
+ @media (max-width: 767px) {
+     img {
+         max-width: 500px;
+     }
+     .content {
+         max-height: 300px;
+         display: flex;
+         align-content: flex-end;
+     }
+     .content__img {
+         visibility: hidden;
+     }
+     .section,
+     .items {
+         display: flex;
+         flex-direction: column;
+     }
+     .icons {
+         min-height: 450px;
+         padding-left: calc(50% - 150px);
+         padding-right: calc(50% - 150px);
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+     }
+ }
