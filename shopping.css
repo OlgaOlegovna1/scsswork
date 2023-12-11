@@ -81,6 +81,87 @@ body {
   padding-top: 60px;
 }
 
+.form {
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-top: 63px;
+  padding-bottom: 113px;
+  display: flex;
+  gap: 120px;
+}
+.form .registr {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 21px;
+}
+.form .input {
+  width: 360px;
+  height: 45px;
+  margin-bottom: 21px;
+}
+.form .text-password {
+  width: 360px;
+  height: 45px;
+  margin-bottom: 21px;
+}
+
+input.gender {
+  margin-bottom: 21px;
+  margin-right: 10px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.text-rgstr {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 39px;
+}
+
+.register {
+  width: 170px;
+  height: 50px;
+  background-color: #F16D7F;
+  border: none;
+}
+.register .buttonrgst {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 20px;
+}
+
+.privileges {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.privileges p {
+  padding-bottom: 22px;
+}
+.privileges li {
+  list-style-type: none;
+}
+.privileges li:before {
+  content: "✔";
+  padding-right: 6px;
+}
+.privileges ul {
+  padding-bottom: 16px;
+}
+
 .basket {
   display: flex;
   gap: 40px;
