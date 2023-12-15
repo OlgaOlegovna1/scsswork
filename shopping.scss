@@ -1,442 +1,434 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
-$BackColor: #F8F3F4;
-$ColorBut: #F16D7F;
-$WidthShop: 1600px;
-body {
-    width: $WidthShop;
-}
-
-.body {
-    font-family: 'Lato', sans-serif;
-}
-
-.header {
-    display: flex;
-    height: 75px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-}
-
-.hiddenmenu {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-
-/* Ссылки внутри выпадающего списка */
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-/* Изменение цвета выпадающих ссылок при наведении курсора */
-
-.dropdown-content a:hover {
-    background-color: rgb(250, 186, 186);
-}
-
-
-/* Показать выпадающее меню при наведении курсора */
-
-.hiddenmenu:hover .dropdown-content {
-    display: block;
-}
-
-
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-
-.hiddenmenu:hover .dropbtn {
-    background-color: #f2a6a6;
-}
-
-.top_head {
-    height: 148px;
-    background-color: $BackColor;
-    .top_headtitle {
-        color: #F16D7F;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding-left: 230px;
-        padding-top: 60px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
     }
-}
-
-.form {
-    padding-left: 230px;
-    padding-right: 230px;
-    padding-top: 63px;
-    padding-bottom: 113px;
-    display: flex;
-    gap: 120px;
-    .registr {
-        color: #222;
+    
+    $BackColor: #F8F3F4;
+    $ColorBut: #F16D7F;
+    $WidthShop: 1600px;
+    body {
+        width: $WidthShop;
+    }
+    
+    .body {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .header {
+        display: flex;
+        height: 75px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+    }
+    
+    .hiddenmenu {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        padding: 16px;
         font-size: 16px;
+        border: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    /* Ссылки внутри выпадающего списка */
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Изменение цвета выпадающих ссылок при наведении курсора */
+    
+    .dropdown-content a:hover {
+        background-color: rgb(250, 186, 186);
+    }
+    /* Показать выпадающее меню при наведении курсора */
+    
+    .hiddenmenu:hover .dropdown-content {
+        display: block;
+    }
+    /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+    
+    .hiddenmenu:hover .dropbtn {
+        background-color: #f2a6a6;
+    }
+    
+    .top_head {
+        height: 148px;
+        background-color: $BackColor;
+        .top_headtitle {
+            color: #F16D7F;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 230px;
+            padding-top: 60px;
+        }
+    }
+    
+    .form {
+        padding-left: 230px;
+        padding-right: 230px;
+        padding-top: 63px;
+        padding-bottom: 113px;
+        display: flex;
+        gap: 120px;
+        .registr {
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 21px;
+        }
+        .input {
+            width: 360px;
+            height: 45px;
+            margin-bottom: 21px;
+        }
+        .text-password {
+            width: 360px;
+            height: 45px;
+            margin-bottom: 21px;
+        }
+    }
+    
+    input.gender {
+        margin-bottom: 21px;
+        margin-right: 10px;
+        font-size: 11px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        padding-bottom: 21px;
     }
-    .input {
-        width: 360px;
-        height: 45px;
-        margin-bottom: 21px;
-    }
-    .text-password {
-        width: 360px;
-        height: 45px;
-        margin-bottom: 21px;
-    }
-}
-
-input.gender {
-    margin-bottom: 21px;
-    margin-right: 10px;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.text-rgstr {
-    color: #B1B1B1;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-bottom: 39px;
-}
-
-.register {
-    width: 170px;
-    height: 50px;
-    background-color: $ColorBut;
-    border: none;
-    .buttonrgst {
-        color: #FFF;
-        font-size: 14px;
+    
+    .text-rgstr {
+        color: #B1B1B1;
+        font-size: 13px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
-        padding-right: 20px;
+        padding-bottom: 39px;
     }
-}
-
-.privileges {
-    color: #000;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    p {
-        padding-bottom: 22px;
+    
+    .register {
+        width: 170px;
+        height: 50px;
+        background-color: $ColorBut;
+        border: none;
+        .buttonrgst {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-right: 20px;
+        }
     }
-    li {
-        list-style-type: none;
-    }
-    li:before {
-        content: "✔";
-        padding-right: 6px;
-    }
-    ul {
-        padding-bottom: 16px;
-    }
-}
-
-.basket {
-    display: flex;
-    gap: 40px;
-}
-
-.Card-Product {
-    border-color: #ffffff;
-    box-shadow: 10px 5px 5px rgb(202, 202, 202);
-    margin-left: 230px;
-    margin-top: 96px;
-    margin-bottom: 40px;
-    margin-right: 128px;
-    width: 662px;
-    height: 306px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    color: #575757;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    .text {
-        padding-left: 3px;
-        padding-top: 22px;
-    }
-    .name {
-        color: #222;
+    
+    .privileges {
+        color: #000;
         font-size: 24px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
-        padding-bottom: 42px;
+        p {
+            padding-bottom: 22px;
+        }
+        li {
+            list-style-type: none;
+        }
+        li:before {
+            content: "✔";
+            padding-right: 6px;
+        }
+        ul {
+            padding-bottom: 16px;
+        }
     }
-    .price {
-        color: #EF5B70;
+    
+    .basket {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .Card-Product {
+        border-color: #ffffff;
+        box-shadow: 10px 5px 5px rgb(202, 202, 202);
+        margin-left: 230px;
+        margin-top: 96px;
+        margin-bottom: 40px;
+        margin-right: 128px;
+        width: 662px;
+        height: 306px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        color: #575757;
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        .text {
+            padding-left: 3px;
+            padding-top: 22px;
+        }
+        .name {
+            color: #222;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-bottom: 42px;
+        }
+        .price {
+            color: #EF5B70;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
-}
-
-.container {
-    margin-top: 113px;
-    margin-left: 100px;
-    h2 {
-        color: #222;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+    
+    .container {
+        margin-top: 113px;
+        margin-left: 100px;
+        h2 {
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
     }
-}
-
-input[type=textregister] {
-    width: 400px;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: 1px solid #A4A4A4;
-    ;
-    background: #ffffff;
-}
-
-input[type=textregister]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-.registerbtn {
-    background-color: #ffffff;
-    color: rgb(148, 148, 148);
-    padding: 16px 20px;
-    margin: 8px;
-    border: solid gray 1px;
-    cursor: pointer;
-    width: 110px;
-    height: 40px;
-    opacity: 0.9;
-    text-align: center;
-    font-size: 11px;
-}
-
-.registerbtn:hover {
-    background-color: $BackColor;
-    cursor: pointer;
-}
-
-.information {
-    width: 400px;
-    height: 214px;
-    background-color: #F5F3F3;
-    margin-top: 57px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
-.connection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: stretch;
-    text-align: center;
-    height: 448px;
-    background-color: #e4dedf;
-    h2 {
-        color: #222224;
+    
+    input[type=textregister] {
+        max-width: 400px;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: 1px solid #A4A4A4;
+        ;
+        background: #ffffff;
+    }
+    
+    input[type=textregister]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+    
+    .registerbtn {
+        background-color: #ffffff;
+        color: rgb(148, 148, 148);
+        padding: 16px 20px;
+        margin: 8px;
+        border: solid gray 1px;
+        cursor: pointer;
+        width: 110px;
+        height: 40px;
+        opacity: 0.9;
         text-align: center;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        font-size: 11px;
     }
-    h3 {
-        color: #222224;
-        font-size: 18px;
+    
+    .registerbtn:hover {
+        background-color: $BackColor;
+        cursor: pointer;
+    }
+    
+    .information {
+        width: 400px;
+        height: 214px;
+        background-color: #F5F3F3;
+        margin-top: 57px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    
+    .connection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: stretch;
+        text-align: center;
+        height: 448px;
+        background-color: #e4dedf;
+        h2 {
+            color: #222224;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        h3 {
+            color: #222224;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    
+    input[type=submit] {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 85px;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+    }
+    
+    input[type=submit]:focus,
+    input[type=submit]:hover {
+        background-color: #F26376;
+    }
+    
+    .footer {
+        background-color: #222;
+        height: 80px;
+        display: flex;
+        padding: 40px 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .text1 {
+            color: white;
+        }
+    }
+    
+    .button {
+        display: flex;
+    }
+    
+    .button .button1,
+    .button .button2,
+    .button .button3,
+    .button .button4 {
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        gap: 15px;
+        flex-shrink: 0;
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        border-color: #020202;
+        border-width: 5px;
+        background: var(--3-a-68-b-8, #ffffff);
+        padding: 1rem 2rem;
     }
-}
-
-input[type=submit] {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 85px;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-}
-
-input[type=submit]:focus,
-input[type=submit]:hover {
-    background-color: #F26376;
-}
-
-.footer {
-    background-color: #222;
-    height: 80px;
-    display: flex;
-    padding: 40px 40px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .text1 {
-        color: white;
-    }
-}
-
-.button {
-    display: flex;
-}
-
-.button .button1,
-.button .button2,
-.button .button3,
-.button .button4 {
-    text-decoration: none;
-    width: 30px;
-    height: 30px;
-    gap: 15px;
-    flex-shrink: 0;
-    color: #ffffff;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-color: #020202;
-    border-width: 5px;
-    background: var(--3-a-68-b-8, #ffffff);
-    padding: 1rem 2rem;
-}
-
-@media (max-width: 768px) {
-    body {
-        max-width: 100vw;
-    }
-    .header {
-        display: flexbox;
-        justify-content: space-between;
-    }
-    .top_head {
-        .top_headtitle {
-            padding-left: 16px;
+    
+    @media (max-width: 768px) {
+        body {
+            max-width: 100vw;
         }
-    }
-    .basket {
-        display: flex;
-        flex-direction: column;
-        .Card-Product {
+        .header {
+            display: flexbox;
+            justify-content: space-between;
+        }
+        .top_head {
+            .top_headtitle {
+                padding-left: 16px;
+            }
+        }
+        .basket {
+            display: flex;
+            flex-direction: column;
+            .Card-Product {
+                margin-left: 16px;
+                margin-right: 16px;
+                min-height: 30vh;
+            }
+        }
+        .container {
+            margin-top: 1px;
             margin-left: 16px;
             margin-right: 16px;
-            min-height: 30vh;
-        }
-    }
-    .container {
-        margin-top: 1px;
-        margin-left: 16px;
-        margin-right: 16px;
-        max-width: 100vw;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        .registr0 {
-            width: 361px;
-        }
-        input[type=textregister] {
-            max-width: 350px;
-        }
-        .registerbtn {
-            text-align: center;
-            padding-top: 7px;
-        }
-        .information {
-            width: 400px;
-            height: 214px;
-            background-color: #F5F3F3;
-            margin-top: 10px;
-            .info1 {
-                padding-right: 10px;
-                color: #4A4A4A;
-                font-size: 11px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+            max-width: 100vw;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            .registr0 {
+                width: 361px;
             }
-            .priceinfo {
-                color: $ColorBut;
-                padding-right: 10px;
+            input[type=textregister] {
+                max-width: 350px;
+            }
+            .registerbtn {
+                text-align: center;
+                padding-top: 7px;
+            }
+            .information {
+                width: 400px;
+                height: 214px;
+                background-color: #F5F3F3;
+                margin-top: 10px;
+                .info1 {
+                    padding-right: 10px;
+                    color: #4A4A4A;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .priceinfo {
+                    color: $ColorBut;
+                    padding-right: 10px;
+                }
+            }
+            .registerbtn1 {
+                width: 270px;
+                height: 50px;
+                background-color: $ColorBut;
+                border: none;
+                color: white;
+            }
+            .center {
+                padding-left: 44px;
+                padding-right: 44px;
             }
         }
-        .registerbtn1 {
-            width: 270px;
-            height: 50px;
-            background-color: $ColorBut;
-            border: none;
-            color: white;
+        .form {
+            padding-left: 16px;
+            padding-right: 16px;
+            display: flexbox;
+            gap: 25px;
         }
-        .center {
-            padding-left: 44px;
-            padding-right: 44px;
-        }
-    }
-    .form {
-        padding-left: 16px;
-        padding-right: 16px;
-        display: flexbox;
-        gap: 25px;
-    }
-    .privileges {
-        color: #000;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        li {
-            padding-bottom: 10px;
+        .privileges {
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            li {
+                padding-bottom: 10px;
+            }
         }
     }
-}
